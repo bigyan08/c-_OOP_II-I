@@ -21,8 +21,13 @@ case '-':
 case '*':
     return a*b;
     break;
+default:
+    cout<<"Invalid input"<<endl;
+    exit(1);
+    break;
 }
 
+return -1;
 }
 int main(){
     int a,b;
