@@ -39,7 +39,7 @@ int main()
 
     cout << "Enter the length of rectangle" << endl;
     cin >> lr;
-    cout << "Enter the length of rectangle" << endl;
+    cout << "Enter the breadth of rectangle" << endl;
     cin >> lb;
 
     area(lr, lb);

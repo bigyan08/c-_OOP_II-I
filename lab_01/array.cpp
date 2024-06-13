@@ -15,12 +15,12 @@ int main() {
     int *arr = new int[n];
 
     cout << "Enter " << n << " integers separated by spaces: ";
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
 
     int sum = 0;
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; i++) {
         sum += arr[i];
     }
 
