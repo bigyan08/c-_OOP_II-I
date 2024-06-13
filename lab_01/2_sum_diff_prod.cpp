@@ -27,7 +27,7 @@ default:
     break;
 }
 
-return -1;
+return 0;
 }
 int main(){
     int a,b;
