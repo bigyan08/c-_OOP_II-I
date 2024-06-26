@@ -32,6 +32,6 @@ return 0;
 int main(){
     int a,b;
     char operation;
-    cout<<calculate(a,b,operation);
+    cout<<calculate(a,b,operation)<<endl;
     return 0;
 }
