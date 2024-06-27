@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class B; // Forward declaration of class B
+
 
 class A {
 private:
@@ -13,7 +13,7 @@ public:
         valueA = value;
     }
 
-    friend int addValues(A& a, B& b);//for using same function name  in different classes
+    friend int addValues(A& a, B& b);
     friend void swapValues(A& a, B& b);
 
     void display() {
