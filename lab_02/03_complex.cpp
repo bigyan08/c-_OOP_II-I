@@ -10,7 +10,7 @@ public:
     Complex(double r = 0, double i = 0) : real(r), imag(i) {}
 
     Complex operator + (Complex other) {
-        return Complex(this->real + other.real, this->imag + other.imag);
+        return Complex(real + other.real,imag + other.imag);
     }
 
     void display() {

@@ -10,7 +10,6 @@ private:
     static string department;
 
 public:
-    // Constructor to initialize student details
     Student(string n, int r) : name(n), rollNumber(r) {}
 
     void display() const {
@@ -19,7 +18,7 @@ public:
     }
 };
 
-// Initialize static member variables
+
 string Student::batch = "2080";
 string Student::department = "WRC";
 

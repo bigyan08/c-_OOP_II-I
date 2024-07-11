@@ -2,7 +2,7 @@
 
 using namespace std;
 
-
+class B;
 
 class A {
 private:

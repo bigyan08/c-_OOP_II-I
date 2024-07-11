@@ -20,7 +20,7 @@ class Customer {
 
     void applyDiscount() {
         if (paidAmount > 20000) {
-            paidAmount *= 0.95;  // Apply a 5% discount
+            paidAmount *= 0.95; 
         }
     }
 

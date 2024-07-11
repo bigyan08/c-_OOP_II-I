@@ -13,13 +13,12 @@ public:
     void readInMeters() {
         cout << "Enter first distance in meters: ";
         cin >> meters;
-        centimeters = 0; 
-    }
+       
+}
 
     void readInCentimeters() {
         cout << "Enter Second distance in centimeters: ";
         cin >> centimeters;
-        meters = 0; 
     }
 
     void displayDistance() {
