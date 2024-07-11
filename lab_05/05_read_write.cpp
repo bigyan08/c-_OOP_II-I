@@ -13,19 +13,12 @@ int main() {
         cerr << "Failed to open the file." << endl;
         return 1;
     }
-
-    // Writing to the file
-    file << "Welcome to the file handling in C++!" << endl;
-
-    // Move the file pointer to the beginning for reading
+    file << "Welcome to the file handling in C++!" << endl;  
     file.seekg(0);
-
-    // Reading from the file
     string line;
     while (getline(file, line)) {
         cout << line << endl;
     }
-
     file.close();
     return 0;
 }

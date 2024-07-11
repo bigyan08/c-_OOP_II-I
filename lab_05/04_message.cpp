@@ -1,38 +1,30 @@
-//write a c++ program that prompts the user to enter an integer, a character, and a line of text, displaying each entered value, and then outputs a predefined message using get, put, getline and write 
-
 #include <iostream>
-#include <fstream>
 #include <string>
-
 using namespace std;
 int main() {
-    int num;
-    char ch;
+    int number;
+    char character;
     string text;
 
     cout << "Enter an integer: ";
-    cin >> num;
+    cin >> number;
+    cin.ignore();
+
     cout << "Enter a character: ";
-    cin >> ch;
+    cin.get(character);
+
     cout << "Enter a line of text: ";
-    cin.ignore(); // Ignore the newline character left in the input stream
+    cin.ignore();
     getline(cin, text);
 
-    ofstream outputFile("output.txt");
+    cout << endl;
+    cout << "Your input:"<<endl;
+    cout << "Integer: " << number <<endl;
+    cout << "Character: "<<character<<endl;
+    cout << "Text: "<<text<<endl;
 
-    outputFile.put(ch);
-    outputFile.write(text.c_str(), text.length());
-
-    ifstream inputFile("output.txt");
-
-    inputFile.get(ch);
-    getline(inputFile, text);
-
-    cout << "Entered integer: " << num << endl;
-    cout << "Entered character: " << ch << endl;
-    cout << "Entered text: " << text << endl;
-
-    cout << "Predefined message: Hello, world!" << endl;
+    cout << "\nPredefined message:"<< endl;
+    cout << "Hello, World!"<<endl;
 
     return 0;
 }
